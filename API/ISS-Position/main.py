@@ -39,12 +39,12 @@ def night():
 
 
 if night() and iss_overhead():
-    account_sid = 'AC4b2be4a1fc89b24fdef109903e73a475'
-    auth_token = '99f2807450e29d36d92e7a63497f7f39'
+    account_sid = 'ACCOUNT SID'
+    auth_token = 'TOKEN'
     client = Client(account_sid, auth_token)
 
     message = client.messages.create(
         from_='whatsapp:+14155238886',
         body='ISS is Overhead. Go outside.',
-        to='whatsapp:+918208773377'
+        to='YOUR WHATSAPP NUMBER'
     )
